@@ -4,7 +4,8 @@
 def key_for_min_value(name_hash)
   lowest = 999
   lowest_item = ""
-  if name_hash.length == 0
+  
+  if name_hash.empty?
     nil
   end
   name_hash.collect do |item, price|
